@@ -1,0 +1,58 @@
+@import '../../styles/variables';
+
+.root {
+  flex: 0 1 33%;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2rem;
+  margin-right: 5rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  color: $accentColor;
+}
+
+.heading {
+  overflow: hidden;
+}
+
+.link {
+  &:hover .heading {
+    text-decoration: underline;
+  }
+}
+
+.item {
+  color: #fff;
+  width: 100%;
+  padding: 0.5rem 0 1rem;
+  margin-bottom: 1rem;
+  // border-bottom: 0.1rem solid #333;
+}
+
+.description {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  display: block;
+}
+
+.meta {
+  font-size: 1rem;
+  color: #aaa;
+  font-style: italic;
+  display: block;
+  margin-top: 0.4rem;
+  text-decoration: none !important;
+}
+
+.image {
+  width: 100%;
+  margin-top: 1rem;
+}

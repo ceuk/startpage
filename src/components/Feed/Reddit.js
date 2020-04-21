@@ -39,6 +39,7 @@ const Reddit = ({ url, title }) => {
               )
             )
           }
+          <a href={`https://old.reddit.com${item.permalink}`} target="_blank" rel="noopener noreferrer" className={styles.description}>	💬 {item.num_comments}</a>
         </div>
       ))}
     </div>

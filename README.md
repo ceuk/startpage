@@ -1,6 +1,6 @@
-![screenshot](https://i.imgur.com/yU3TXUJ.png)
-
 # Feeds Startpage 
+
+![screenshot](https://i.imgur.com/yU3TXUJ.png)
 
 Check `/src/App.js` for the URLS. **Tip**: Create a multi on reddit to use as a feed. You can also filter the Github feed by language and the Product Hunt feed by types.
 

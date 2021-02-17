@@ -23,8 +23,10 @@ const ProductHunt = ({ url, title }) => {
       <h2 className={styles.title}>#{title.toLowerCase()}</h2>
       {feed && Array.isArray(feed) && feed.map((item, i) => (
         <div key={item.id || item.link || i} className={styles.item}>
-          <a href={item.content.match(/(href=")(.*)(">Link)/)[2]} target="_blank" rel="noopener noreferrer">
-            {item.title}
+          <a href={item.content.match(/(href=")(.*)(">Link)/)[2]} target="_blank" rel="noopener noreferrer" className={styles.link}>
+            <span className={styles.heading}>
+              {item.title}
+            </span>
           </a>
           <span className={styles.description}>{truncate(item.contentSnippet.replace(/Discussion\n {8}\|\n {8}Link/, '').substr(2), 100, '…')}</span>
         </div>

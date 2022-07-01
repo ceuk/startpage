@@ -31,7 +31,7 @@
 }
 
 .item {
-  color: #f8f8f2;
+  color: $foreground;
   width: 100%;
   padding: 0.5rem 0 1rem;
   margin-bottom: 1rem;
@@ -41,7 +41,7 @@
 .description {
   margin-top: 0.5rem;
   font-size: 1.2rem;
-  color: #f8f8f2;
+  color: $foreground;
   display: block;
 }
 

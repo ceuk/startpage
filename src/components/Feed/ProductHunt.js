@@ -28,7 +28,7 @@ const ProductHunt = ({ url, title }) => {
               {item.title}
             </span>
           </a>
-          <span className={styles.description}>{truncate(item.contentSnippet.replace(/Discussion\n {8}\|\n {8}Link/, '').substr(2), 100, '…')}</span>
+          <span className={styles.description}><a href={item.link} target="_blank" rel="noopener noreferrer">{item.author}</a></span>
         </div>
       ))}
     </div>

@@ -28,7 +28,7 @@ const ProductHunt = ({ url, title }) => {
               {item.title}
             </span>
           </a>
-          <span className={styles.description}><a href={item.link} target="_blank" rel="noopener noreferrer">{item.author}</a></span>
+          <a className={styles.description} href={item.link} target="_blank" rel="noopener noreferrer">{item.author}</a>
         </div>
       ))}
     </div>
